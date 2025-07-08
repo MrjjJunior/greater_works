@@ -92,6 +92,8 @@ body {
 .hero {
   background-image:url("images/congregation.jpg");
   /*background: linear-gradient(135deg, #9524d6 0%, #490440 100%); */
+  background-size: cover;
+  width: 100%;
   color: white;
   text-align: center;
   padding: 150px 0 100px;
@@ -144,6 +146,18 @@ body {
   font-size: 1.2rem;
   opacity: 0.9;
 }
+
+
+/* Body section / content */
+
+.main{
+  background-color: blue;
+  display: flex;
+  flex-direction: column;
+  padding-top: 80px;
+
+}
+
 
 /* Intro Section */
 .intro {
