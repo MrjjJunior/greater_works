@@ -210,6 +210,20 @@ body {
   margin-right: auto;
 }
 
+/*  Card Section */
+.card{
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-content {
+  padding: 2px 16px;
+}
+
 /* Events Section */
 .events {
   padding: 80px 0;
@@ -845,6 +859,7 @@ footer {
 
   .hero {
     padding: 120px 0 80px;
+    height: 70dvh;
   }
 
   .page-header {
@@ -854,6 +869,16 @@ footer {
   .hero-content h1,
   .page-header h1 {
     font-size: 1.8rem;
+  }
+
+  .main {
+    margin: 0px;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;;
+    .main-p{
+      font-size: 1em;
+    }
   }
 
   .intro,
