@@ -396,8 +396,106 @@ body {
 
 /* History Section */
 .history {
-  padding: 80px 0;
+  padding: 0;
+  margin: 0;
 }
+
+.history a {
+  text-decoration: none;
+  color: black;
+
+}
+.history a:hover, a.selected {
+  color: #f700ff;
+}
+.history h3 {
+  text-align: center;
+  color: #000000;
+  text-shadow: #7b7979 1px 1px 2px;
+  margin-bottom: 5px;
+}
+  #timeline {
+    width: 500px;
+    height: 600px;
+    overflow: hidden;
+    margin: 40px auto;
+    position: relative;
+    background: 
+    url('http://www.csslab.cl/ejemplos/timelinr/latest/images/dot.gif')
+    3px top repeat-y;
+  }
+    #dates {
+      width: 100px;
+      height: 600px;
+      overflow: hidden;
+      float: left;
+    }
+      #dates li {
+        list-style: none;
+        width:100px;
+        height: 100px;
+        line-height:100px;
+        font-size: 24px;
+        padding-left: 10px;
+        background:
+        url('http://www.csslab.cl/ejemplos/timelinr/latest/images/biggerdot.png')
+        left center no-repeat;
+      }
+        #dates a {
+          line-height: 38px;
+          padding-bottom: 10px;
+        }
+        #dates .selected {
+          font-size: 38px;
+        }
+    #issues {
+      width: 400px;
+      height: 600px;
+      overflow: hidden;
+      float: left;
+    }
+      #issues li {
+        max-width: 300px; // width: 400px;
+        height: 600px;
+        list-style: none;
+        text-align: center; // add
+      }
+        #issues li.selected img {
+          -webkit-transform: scale(1.1,1.1);
+          -moz-transform: scale(1.1,1.1);
+          -o-transform: scale(1.1,1.1);
+          -ms-transform: scale(1.1,1.1);
+          transform: scale(1.1,1.1);
+        }
+        #issues li img{
+          float: left;
+          width: 200px; // add
+          margin: 10px 30px 10px 50;
+          -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF)"; /* IE 8 */   
+          filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF);/* IE 6 & 7 */      
+          zoom: 1;
+          -webkit-transition: all 2s ease-in-out;
+          -moz-transition: all 2s ease-in-out;
+          -o-transition: all 2s ease-in-out;
+          -ms-transition: all 2s ease-in-out; 
+          transition: all 2s ease-in-out;
+          -webkit-transform: scale(0.7,0.7);
+          -moz-transform: scale(0.7,0.7);
+            -o-transform: scale(0.7,0.7);
+            -ms-transform: scale(0.7,0.7);
+            transform: scale(0.7,0.7);
+        }
+        #issues li h3{
+          color: #490440;
+          font-size: 2.5em;
+          text-align: center;
+          text-shadow: #000 1px;
+          line-height: 1em;
+          padding-bottom: 0.8em;
+        }
+        #issues li p {
+          font-size: 14px;
+        }
 
 .history h2 {
   text-align: center;
@@ -406,6 +504,7 @@ body {
   justify-content: none;
   color: black;
 }
+
 
 .history-content p {
   font-size: 1.1rem;
