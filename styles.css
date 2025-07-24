@@ -495,7 +495,58 @@ body {
         }
         #issues li p {
           font-size: 14px;
+          margin: 10px 20px;
+          font-weight: normal;
+          line-height: 22px;
         }
+    #grad_top,
+    #grad_bottom {
+      width: 500px;
+      height: 800px;
+      position: absolute;
+    }
+      #grad_top {
+        top: 0;
+        background:
+        repeat-x;
+      }
+      #grad_bottom {
+        bottom: 0;
+        background:
+        repeat-x;
+      }
+    #next,
+    #prev {
+      position: absolute;
+      left: 45%; // left: 55%;
+      font-size: 70px;
+      width: 38px;
+      height: 22px;
+      background-position: 0 -44px;
+      background-repeat: no-repeat;
+      text-indent: -9999px;
+      overflow: hidden;
+    }
+      #next:hover,
+      #prev:hover {
+        background-position: 0 0;
+      }
+      #next {
+        bottom: 0;
+        background-image: 
+        url('http://www.csslab.cl/ejemplos/timelinr/latest/images/next_v.png');
+      }
+      #prev {
+        top: 0;
+        background-image:
+        url('http://www.csslab.cl/ejemplos/timelinr/latest/images/prev_v.png');
+      }
+        #next.disabled,
+        #prev.disabled {
+          opacity: 0.2;
+        }
+
+    
 
 .history h2 {
   text-align: center;
@@ -514,6 +565,57 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+
+/* Timeline */
+.page-wrapper h2 {
+  font-size: 50px;
+}
+
+.timeline-container {
+  width: 90vw;
+  max-width: 1360px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.margin-bottom-medium {
+  margin-bottom: 32px;
+}
+
+.paragrah-large{
+  letter-spacing: -0.02em;
+  font-size: 20px;
+}
+
+.section-timeline-heading {
+  background-color: black;
+}
+
+.padding-vertical-xlarge {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.timeline_main_heading-wrapper {
+  color: #fff;
+  text-align: center;
+  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.timeline_component {
+  flex-direction:  column;
+  justify-content: center;
+  align-items: center;
+  max-width: 1120px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  position: relative;
+}
+
+
 
 /* Services Page Styles */
 .services-content {
