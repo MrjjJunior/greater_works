@@ -620,6 +620,7 @@ body {
 /* Services Page Styles */
 .services-content {
   padding: 80px 0;
+  background: #f8f9fa;
 }
 
 .services-grid {
@@ -629,11 +630,12 @@ body {
 }
 
 .service-card {
-  background: white;
+  background: linear-gradient(135deg, #e3cdfa 0%, #e3cde0 110%);
   border-radius: 10px;
   padding: 30px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
+ 
 }
 
 .service-card:hover {
@@ -641,7 +643,7 @@ body {
 }
 
 .service-icon {
-  background: #3498db;
+  background: #cf2dc2ff;
   color: white;
   width: 60px;
   height: 60px;
@@ -660,7 +662,7 @@ body {
 }
 
 .service-time {
-  color: #3498db;
+  color: #cf2dc2ff;
   font-weight: bold;
   margin-bottom: 15px;
   display: flex;
@@ -688,7 +690,7 @@ body {
   content: "•";
   position: absolute;
   left: 0;
-  color: #3498db;
+  color: #cf2dc2ff;
   font-weight: bold;
 }
 
@@ -702,7 +704,7 @@ body {
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 50px;
-  color: #2c3e50;
+  color: #000000ff;
 }
 
 .schedule-table {
@@ -724,7 +726,7 @@ body {
 }
 
 .schedule-header {
-  background: #2c3e50;
+  background: #1c2125ff;
   color: white;
   font-weight: bold;
 }
@@ -739,7 +741,7 @@ body {
 }
 
 .schedule-time {
-  color: #3498db;
+  color: #cf2dc2ff;
   font-weight: bold;
 }
 
