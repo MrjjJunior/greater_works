@@ -231,6 +231,58 @@ document.addEventListener("DOMContentLoaded", () => {
   })
 })
 
+//----------------- Service times ------------------------
+const services = [
+    { name: "Prayer Group", day: 3, hour: 19, minute: 0 },
+    { name: "Youth Service", day: 5, hour: 18, minute: 0 },
+    { name: "Sunday First Service", day: 0, hour: 8, minute: 30 },
+    { name: "Sunday Second Service", day: 0, hour: 11, minute: 30 }
+];
+
+function getNextOccurrence(service) {
+    const now = new Date();
+    let serviceDate = new Date();
+
+    serviceDate.setHours(service.hour, service.minute, 0, 0);
+
+    const dayDifference = (service.day - now.getDay() + 7) % 7;
+    serviceDate.setDate(now.getDate() + dayDifference);
+
+    if (dayDifference === 0 && serviceDate <= now) {
+        serviceDate.setDate(serviceDate.getDate() + 7);
+    }
+
+    return serviceDate;
+}
+
+function populateServices() {
+    const cards = document.querySelectorAll(".event-card");
+
+    cards.forEach(card => {
+        const serviceName = card.dataset.service;
+        const serviceData = services.find(s => s.name === serviceName);
+
+        if (!serviceData) return;
+
+        const nextDate = getNextOccurrence(serviceData);
+
+        card.querySelector(".service-day").textContent =
+            nextDate.getDate();
+
+        card.querySelector(".service-month").textContent =
+            nextDate.toLocaleString("en-ZA", { month: "short" });
+
+        card.querySelector(".service-time").textContent =
+            nextDate.toLocaleTimeString("en-ZA", {
+                hour: "numeric",
+                minute: "2-digit"
+            });
+    });
+}
+
+populateServices();
+// ------------------------------------------------
+
 // History timeline 
     $(function(){
       $().timelinr({

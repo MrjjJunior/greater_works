@@ -92,7 +92,7 @@ body {
 
 /* Hero Section */
 .hero {
-  background-image:url("images/land.png");
+  background-image:url("images/Untitled\ design.png"); 
   /*background: linear-gradient(135deg, #9524d6 0%, #490440 100%); */
   background-size: cover;
   background-position: center;
@@ -362,13 +362,13 @@ body {
   min-width: 80px;
 }
 
-.event-date .day {
+.event-date .service-day {
   display: block;
   font-size: 1.8rem;
   font-weight: bold;
 }
 
-.event-date .month {
+.event-date .service-month {
   display: block;
   font-size: 0.9rem;
   text-transform: uppercase;
@@ -889,7 +889,7 @@ footer {
   }
 
   .hero {
-    background-image: url("images/potrait_land.png");
+    background-image: url("images/Untitled\ design\(1\).png");
     background-color: #000;
     background-size:contain;
     background-position: center top;
