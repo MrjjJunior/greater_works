@@ -248,7 +248,7 @@ body {
   position: relative;
   width: 100%;
   height: 100vh;
-  background: url('images/sunday.jpg') center center/cover no-repeat;
+  background: url('images/section1(2).jpg') center center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -295,8 +295,8 @@ body {
 }
 
 .info-section1 h1, p{
-  text-align: right;
-  justify-content: right;
+  text-align: left;
+  justify-content: left;
 }
 
 .info-section h1 , p{
@@ -675,7 +675,7 @@ body {
 }
 
 .schedule-table {
-  background: white;
+  background: rgb(255, 255, 255);
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
