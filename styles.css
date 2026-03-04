@@ -717,17 +717,126 @@ body {
 }
 
 /* =====================Bible college page=========================== */
-.bible_collge-head {
+/* .bible_collge-head {
   background-image: url("images/bible_college/graduation.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  position: relative;
   width: 100%;
   height: 100vh;
+  background: url('images/section1(2).jpg') center center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 50px;
+  box-sizing: border-box;
   color: white;
-  text-align: center;
-  padding: 150px 0 100px;
-  margin-top: 70px;
+}
+.bc-p {
+  padding-top: 30px;
+  justify-content: center;
+  align-items: center;
+} */
+
+/* ===============================
+   HERO SECTION
+================================ */
+
+.bible-hero {
+    position: relative;
+    height: 90vh;
+    background-image: url("images/bible_college/graduation.jpg"); /* Change path */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Dark overlay */
+.bible-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to bottom,
+        rgba(0,0,0,0.4),
+        rgba(0,0,0,0.7)
+    );
+}
+
+.hero-overlay {
+    position: relative;
+    text-align: center;
+    color: white;
+    z-index: 2;
+    padding: 20px;
+}
+
+.hero-overlay h1 {
+    font-size: 60px;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+}
+
+.hero-overlay p {
+    font-size: 20px;
+    opacity: 0.9;
+}
+
+/* ===============================
+   INFO SECTION
+================================ */
+
+.bible-info {
+    padding: 80px 20px;
+    background-color: #f8f8f8;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.bible-info h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 36px;
+}
+
+.bible-info > .container > p {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 50px auto;
+    line-height: 1.7;
+    color: #555;
+}
+
+/* Grid */
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+/* Cards */
+.info-card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.info-card:hover {
+    transform: translateY(-6px);
+}
+
+.info-card h3 {
+    margin-bottom: 15px;
+}
+
+.info-card p {
+    color: #666;
+    line-height: 1.6;
 }
 
 
@@ -963,7 +1072,9 @@ footer {
     box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
     padding: 20px 0;
   }
-
+  .bible-hero{  
+    background-image: url("images/bible_college/graduation.jpg"); /* Change path */
+  }
   .nav-menu.active {
     left: 0;
   }
