@@ -810,6 +810,11 @@ body {
     color: #555;
 }
 
+
+/* ===============================
+   BIBLE COLLEGE CARD
+================================ */
+
 /* Grid */
 .info-grid {
     display: grid;
@@ -839,6 +844,236 @@ body {
     line-height: 1.6;
 }
 
+
+/* SECTION */
+
+.tuition-section{
+    padding:100px 20px;
+    background:#f6f8fb;
+    text-align:center;
+}
+
+.tuition-title{
+    font-size:40px;
+    margin-bottom:70px;
+    letter-spacing:1px;
+}
+
+/* GRID */
+
+.tuition-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:40px;
+    max-width:1100px;
+    margin:auto;
+}
+
+/* CARD */
+
+.tuition-card{
+
+    background:white;
+    border-radius:16px;
+    overflow:hidden;
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,0.08),
+    0 3px 8px rgba(0,0,0,0.04);
+
+    transition:all .35s ease;
+
+    transform:scale(1);
+}
+
+/* HOVER GROW */
+
+.tuition-card:hover{
+    transform:scale(1.06);
+    box-shadow:
+    0 25px 50px rgba(221, 43, 245, 0.18);
+}
+
+/* HEADER */
+
+.card-header{
+
+    padding:22px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:12px;
+
+    color:white;
+    font-size:20px;
+    font-weight:600;
+}
+
+/* HEADER COLORS */
+
+.blue{ background:#2f6fed; }
+
+.green{ background:#27ae60; }
+
+.purple{ background:#7c3aed; }
+
+/* STAR */
+
+.star{
+    font-size:22px;
+}
+
+/* BODY */
+
+.card-body{
+    padding:35px 30px;
+}
+
+/* PRICE */
+
+.price{
+    font-size:24px;
+    font-weight:700;
+    margin-bottom:25px;
+}
+
+/* ROW */
+
+.fee-row{
+    display:flex;
+    justify-content:space-between;
+    font-size:16px;
+}
+
+/* DIVIDER */
+
+.divider{
+
+    height:1px;
+    background:#e6e6e6;
+
+    margin:20px auto;
+
+    width:80%;
+}
+
+
+
+/* ============================ 
+  REQUIREMENTS SECTION
+  ==============================
+*/
+.requirements-section{
+    padding:100px 20px;
+    background:#f8f9fb;
+    display:flex;
+    justify-content:center;
+}
+
+/* CONTAINER */
+.requirements-container{
+    /* max-width:800px;
+    width:100%;
+    background:white;
+    padding:50px;
+    border-radius:14px;
+    box-shadow:0 15px 40px rgba(0,0,0,0.08); */
+    justify-content: center;
+}
+
+/* TITLE */
+.requirements-title{
+    font-size:32px;
+    margin-bottom:30px;
+    font-weight:700;
+    color:#111;
+}
+
+/* LIST */
+.requirements-list{
+    list-style:none;
+    padding:0;
+}
+
+/* LIST ITEMS */
+.requirements-list li{
+    padding:16px 18px;
+    margin-bottom:10px;
+    background:#fafafa;
+    border-left:4px solid #3b82f6;
+    border-radius:6px;
+    font-size:16px;
+    transition:all .25s ease;
+}
+
+/* HOVER */
+.requirements-list li:hover{
+    transform:translateX(6px);
+    background:#f1f5ff;
+}
+
+/* NOTE */
+.requirements-note{
+    margin-top:35px;
+    padding:20px;
+    background:#fff5f5;
+    border-left:5px solid #ef4444;
+    border-radius:8px;
+    font-size:15px;
+    line-height:1.6;
+}
+
+
+/*==================== 
+        APPLY SECTION 
+======================
+*/
+.apply-section{
+    padding:100px 20px;
+    background:linear-gradient(135deg,#1e3a8a,#2563eb);
+    text-align:center;
+    color:white;
+}
+
+/* CONTAINER */
+.apply-container{
+    max-width:700px;
+    margin:auto;
+}
+
+/* TITLE */
+.apply-title{
+    font-size:36px;
+    font-weight:700;
+    margin-bottom:20px;
+}
+
+/* TEXT */
+.apply-text{
+    font-size:18px;
+    line-height:1.6;
+    margin-bottom:35px;
+    opacity:0.9;
+}
+
+/* BUTTON */
+.apply-button{
+    display:inline-block;
+    padding:16px 40px;
+    font-size:18px;
+    font-weight:600;
+    color:#1e3a8a;
+    background:white;
+    border-radius:8px;
+    text-decoration:none;
+    transition:all .3s ease;
+}
+
+/* HOVER EFFECT */
+.apply-button:hover{
+    transform:translateY(-4px);
+    box-shadow:0 12px 30px rgba(0,0,0,0.2);
+}
 
 /* =====================Contact Page Styles========================== */
 .contact-content {
@@ -1073,7 +1308,7 @@ footer {
     padding: 20px 0;
   }
   .bible-hero{  
-    background-image: url("images/bible_college/graduation.jpg"); /* Change path */
+    background-image: url("images/514459727_1146014104228264_5710328890947268842_n.jpg");
   }
   .nav-menu.active {
     left: 0;
@@ -1188,6 +1423,9 @@ footer {
     .main-p{
       font-size: 1em;
     }
+  }
+  .bible-hero{
+    background: url(images/bible_college/phone.png);
   }
 
   .intro,

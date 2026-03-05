@@ -8,6 +8,30 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
+<!-- <script>
+
+const cards = document.querySelectorAll('.tuition-card');
+
+const observer = new IntersectionObserver(entries => {
+
+entries.forEach(entry => {
+
+if(entry.isIntersecting){
+
+entry.target.style.transform = "scale(1.06)";
+entry.target.style.boxShadow =
+"0 25px 50px rgba(0,0,0,0.18)";
+
+}
+
+});
+
+},{threshold:0.6});
+
+cards.forEach(card => observer.observe(card));
+
+</script> -->
+
 <body style="background-color: black;">
     <header>
         <nav class="navbar">
@@ -80,11 +104,185 @@
                     <p>
                         CFCI Bible College challenges students to live a life of excellence through 
                         living a healthy, active lifestyle and growing their leadership abilities. 
-                        While at CFCI Bible College, students develop Christ-like character through 
-                        time spent in relationships with mentors and peers.
+                        While at CFCI Bible College, students develop Christ-like character through time spent in 
+                        relationships with mentors and peers.
                     </p>
                 </div>
             </div>
+            <p> <tab></p>
+            <h2>Programs & Curriculum</h2>
+            <div class="info-grid">
+
+                <div class="info-card">
+                    <h3 style="font-size: 1.5em;">Practical Leadership Studies</h3>
+                    <p>
+                        Especially designed to develop a born-again believer to maturity, fully 
+                        assured in their walk with God
+                    </p>                
+                </div>
+
+                <div class="info-card">
+                    <h3 style="font-size: 1.5em;">Biblical Leadership Studies</h3>
+                    <p>
+                        The student can now focus on the importance of their purpose in the body of Christ
+                    </p>                
+                </div>
+
+                <div class="info-card">
+                    <h3 style="font-size: 1.5em;">Ministry Leadership Studies</h3>
+                    <p>
+                        The Theme of the 3rd year is “Impartation to the Sons”. Students will be equipped 
+                        with business principles as well as other concepts to start an effective ministry from implementation.
+                    </p>                
+                </div>
+            </div>
+            <p><tab></tab></p>
+            <h2>Admission & Tuition</h2>
+            <!-- <p style="font-size: 0.9em;">Registration will close on the 31st of january</p> -->
+            <p>
+                <b>Registration will close on the 31st of january</b>
+                <br>
+                You are required to attend class 1 NIGHT a week. (Classes will take place from 1st week in February 
+                2026 till November 2026 with a mid-year break and some study breaks in between the terms).Class times 
+                Start at 19:00 - 22:00
+            </p>
+        </div>
+    </section>
+
+    <section class="tuition-section">
+
+    <h2 class="tuition-title">Bible College Tuition</h2>
+
+    <div class="tuition-grid">
+
+        <!-- YEAR 1 -->
+        <div class="tuition-card">
+            <div class="card-header blue">
+                <span class="star">☆</span>
+                <h3>Year 1</h3>
+            </div>
+
+            <div class="card-body">
+
+                <div class="price">Total R8,800</div>
+
+                <div class="divider"></div>
+
+                <div class="fee-row">
+                    <span>Registration</span>
+                    <span>R1,000</span>
+                </div>
+
+                <div class="divider"></div>
+
+                <div class="fee-row">
+                    <span>Monthly Fee x 10</span>
+                    <span>R780</span>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- YEAR 2 -->
+        <div class="tuition-card">
+            <div class="card-header green">
+                <span class="star">⯪</span>
+                <h3>Year 2</h3>
+            </div>
+
+            <div class="card-body">
+
+                <div class="price">Total R8,800</div>
+
+                <div class="divider"></div>
+
+                <div class="fee-row">
+                    <span>Registration</span>
+                    <span>R1,000</span>
+                </div>
+
+                <div class="divider"></div>
+
+                <div class="fee-row">
+                    <span>Monthly Fee x 10</span>
+                    <span>R780</span>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- YEAR 3 -->
+        <div class="tuition-card">
+            <div class="card-header purple">
+                <span class="star">★</span>
+                <h3>Year 3</h3>
+            </div>
+
+            <div class="card-body">
+
+                <div class="price">Total R10,100</div>
+
+                <div class="divider"></div>
+
+                <div class="fee-row">
+                    <span>Registration</span>
+                    <span>R1,000</span>
+                </div>
+
+                <div class="divider"></div>
+
+                <div class="fee-row">
+                    <span>Monthly Fee x 10</span>
+                    <span>R990</span>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    </section>
+
+    <section class="requirements-section">
+        <div class="requirements-container">
+
+            <h2 class="requirements-title">Requirements</h2>
+
+            <ul class="requirements-list">
+                <li>Interview – Meet with our admissions team</li>
+                <li>Passion for ministry and commitment to the 1-year program</li>
+                <li>Basic biblical knowledge</li>
+                <li>Age requirement: 18–30 years old</li>
+                <li>Interview with our admissions team</li>
+                <li>Personal reference (if applicable)</li>
+            </ul>
+
+            <div class="requirements-note">
+                <strong>Note:</strong> Tuition does not include accommodation, food, transport, or books.
+                Students are responsible for their own living expenses and study materials.
+            </div>
+
+        </div>
+    </section> 
+
+    <section class="apply-section">
+        <div class="apply-container">
+
+            <h2 class="apply-title">Apply for Bible College</h2>
+
+            <p class="apply-text">
+                If you feel called to grow in your faith and ministry, we invite you to apply
+                to our Bible College program. Send us an email with your details and our
+                admissions team will contact you to begin the application process.
+            </p>
+
+            <a href="mailto:info@greaterworkscfc.co.za?subject=Bible College Application"
+            class="apply-button">
+            Apply via Email
+            </a>
+
         </div>
     </section>
 

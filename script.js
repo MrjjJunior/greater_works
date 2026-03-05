@@ -293,3 +293,25 @@ populateServices();
         startAt:    3
       })
     });
+
+
+// // tution cards 
+// const cards = document.querySelectorAll('.tuition-card');
+
+// const observer = new IntersectionObserver(entries => {
+
+// entries.forEach(entry => {
+
+// if(entry.isIntersecting){
+
+// entry.target.style.transform = "scale(1.06)";
+// entry.target.style.boxShadow =
+// "0 25px 50px rgba(222, 59, 255, 0.18)";
+
+// }
+
+// });
+
+// },{threshold:0.6});
+
+// cards.forEach(card => observer.observe(card));
