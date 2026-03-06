@@ -1177,6 +1177,127 @@ body {
 }
 
 
+/* ================================
+   SPONSOR A STUDENT SECTION
+================================ */
+
+.sponsor-section {
+    padding: 100px 20px;
+    background: #f6f8fc;
+}
+
+.sponsor-container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* Header */
+
+.sponsor-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.sponsor-header h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.sponsor-header p {
+    max-width: 650px;
+    margin: auto;
+    line-height: 1.7;
+    color: #555;
+}
+
+/* Banking title */
+
+.bank-heading {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 24px;
+    color: #2d6cdf;
+}
+
+/* Grid layout */
+
+.sponsor-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+/* LEFT BLOCK */
+
+.sponsor-info {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+.sponsor-info h4 {
+    margin-bottom: 20px;
+}
+
+.sponsor-info ul {
+    margin-bottom: 25px;
+    padding-left: 18px;
+}
+
+.sponsor-info li {
+    margin-bottom: 12px;
+    line-height: 1.6;
+}
+
+.note {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.reference {
+    font-weight: 500;
+}
+
+/* RIGHT BLOCK (Cool banking UI) */
+
+.bank-card {
+    background: linear-gradient(135deg,#2d6cdf,#1c3faa);
+    color: white;
+    padding: 40px;
+    border-radius: 14px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.bank-card h4 {
+    margin-bottom: 25px;
+}
+
+/* bank items */
+
+.bank-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 18px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+}
+
+.bank-item span {
+    opacity: 0.8;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+
+    .sponsor-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
 /* =====================Contact Page Styles========================== */
 .contact-content {
   padding: 80px 0;
